@@ -1,10 +1,10 @@
 <<<<<<< HEAD
-#Locadora de Jogos – API REST
+# Locadora de Jogos – API REST
 
 Este projeto é um sistema de gerenciamento de jogos digitais que permite ao usuário comprar e alugar jogos, armazenando registros de licenças, datas de ativação, expiração, nota fiscal e vínculo com cada jogador.
 A aplicação foi desenvolvida em Spring Boot, versionada em camadas e utilizando MySQL como banco de dados.
 
-#Funcionalidades
+# Funcionalidades
 
 ✔ Cadastro e listagem de jogos
 ✔ Aluguel temporário (com registro de data de ativação e expiração)
@@ -13,7 +13,7 @@ A aplicação foi desenvolvida em Spring Boot, versionada em camadas e utilizand
 ✔ Controle de acesso com Spring Security + JWT
 ✔ Suporte completo para execução local e via Docker
 
-#Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 Java 21	- Linguagem principal
 Spring Boot	 - Camadas Web + Service
@@ -22,7 +22,7 @@ JPA/Hibernate - ORM e persistência
 MySQL - Banco relacional
 Docker - Containerização e deploy
 
-#Entidades centrais:
+# Entidades centrais:
 
 JogoModel - Dados do jogo (preços, plataforma, gênero)
 JogadorModel - Usuário do sistema
@@ -31,7 +31,7 @@ CompraModel - Licença permanente
 AluguelModel - Licença com expiração
 DTOs - Troca de informações de forma segura
 
-#COMO RODAR O PROJETO - Execução Local
+# COMO RODAR O PROJETO - Execução Local
 Pré-requisitos:
 
 Java 21
@@ -53,7 +53,7 @@ mvn spring-boot:run
 
 Acesso → http://localhost:8080
 
-#Execução com Docker
+# Execução com Docker
 
 1. Gerar .jar:
 mvn clean package -DskipTests
@@ -64,7 +64,7 @@ docker build -t locadora-jogos .
 3. Executar container:
 docker run -p 8080:8080 locadora-jogos
 
-#Endpoints principais
+# Endpoints principais
 
 Método	Rota	Descrição
 GET	/jogos	Lista jogos
@@ -73,10 +73,8 @@ POST	/compras/comprar	Comprar jogo
 GET	/alugueis	Histórico de alugueis
 GET	/compras	Compras efetuadas
 
-#Conclusão
+# Conclusão
 
 Este sistema simula um marketplace de jogos digitais utilizando boas práticas de engenharia de software, incluindo DTOs, Service Layer, Repository e segurança com JWT.
 Pode evoluir futuramente com renovação automática de aluguel, sistema de pagamento e frontend integrado.
-=======
-# Locadora-de-jogos
->>>>>>> 1a4596758135db42badedf403caf5495f2cf256a
+
