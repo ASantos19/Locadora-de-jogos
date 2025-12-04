@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Locadora de Jogos – API REST
 
 Este projeto é um sistema de gerenciamento de jogos digitais que permite ao usuário comprar e alugar jogos, armazenando registros de licenças, datas de ativação, expiração, nota fiscal e vínculo com cada jogador.
